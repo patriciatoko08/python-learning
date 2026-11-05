@@ -30,6 +30,7 @@ while True:
     print("2. Add a task")
     print("3. Remove a task")
     print("4. Quit")
+    print("5. Clear all tasks")
     choice = input("Choose: ")
 
     if choice == "1":
@@ -53,5 +54,9 @@ while True:
             print("Please enter a number.")
     elif choice == "4":
         break
+    elif choice == "5":
+        tasks.clear()
+        save_tasks(tasks)
+        print("All tasks cleared.")
     else:
         print("Please choose 1, 2, 3 or 4.")
