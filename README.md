@@ -12,6 +12,7 @@ This repository contains my first Python projects.
 | `calculator.py` | Calculates sum, difference and product, with error handling |
 | `word_count.py` | Reads a text file and shows the 5 most common words |
 | `weather.py` | Shows the current weather for any city, using a public API |
+ | `todo.py` | Command-line to-do list that saves tasks in a file |
 
 ## How to run
 
@@ -34,3 +35,4 @@ python3 weather.py
 
 - Calling an AI model through its API
 - Building a small chatbot project
+  
