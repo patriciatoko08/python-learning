@@ -1,7 +1,12 @@
 with open("text.txt") as f:
     text = f.read()
 
-words = text.lower().split()
+text = text.lower()
+
+for mark in ".,!?;:\"'()":
+    text = text.replace(mark, "")
+
+words = text.split()
 
 counts = {}
 for word in words:
