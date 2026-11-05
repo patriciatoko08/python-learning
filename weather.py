@@ -1,12 +1,29 @@
 import requests
 
-url = "https://api.open-meteo.com/v1/forecast?latitude=45.846&longitude=9.007&current_weather=true&timezone=Europe/Zurich"
-response = requests.get(url)
-data = response.json()
+city = input("City: ")
 
-weather = data["current_weather"]
-temperature = weather["temperature"]
-wind = weather["windspeed"]
+try:
+    geo_url = "https://geocoding-api.open-meteo.com/v1/search"
+    geo = requests.get(geo_url, params={"name": city, "count": 1}, timeout=10).json()
 
-print(f"Current temperature: {temperature}°C")
-print(f"Current wind speed: {wind} km/h")
+    if "results" not in geo:
+        print("City not found.")
+    else:
+        place = geo["results"][0]
+        lat = place["latitude"]
+        lon = place["longitude"]
+
+        url = "https://api.open-meteo.com/v1/forecast"
+        params = {
+            "latitude": lat,
+            "longitude": lon,
+            "current_weather": "true",
+            "timezone": "auto"
+        }
+        weather = requests.get(url, params=params, timeout=10).json()["current_weather"]
+        print(f"Weather in {place['name']}:")
+        print(f"Temperature: {weather['temperature']}°C")
+        print(f"Wind Speed: {weather['windspeed']} km/h")
+
+except requests.exceptions.RequestException:
+    print("Could not connect. Check your internet and try again.")
