@@ -16,6 +16,8 @@ This repository contains my first Python projects.
 | `ask_ai.py` | Sends a question to a local AI model (Ollama) |
 | `chatbot.py` | Chatbot that remembers the conversation |
 | `doc_qa.py` | Answers questions about a text file using a local AI model |
+   | `main.py` | Web API (FastAPI) with endpoints that ask a local AI model, also about a document |
+   | `requirements.txt` | The libraries needed to run the projects |
    | `main.py` | Web API (FastAPI) with an endpoint that asks a local AI model |
 
 ## How to run
