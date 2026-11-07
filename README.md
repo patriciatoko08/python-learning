@@ -16,6 +16,7 @@ This repository contains my first Python projects.
 | `ask_ai.py` | Sends a question to a local AI model (Ollama) |
 | `chatbot.py` | Chatbot that remembers the conversation |
 | `doc_qa.py` | Answers questions about a text file using a local AI model |
+   | `main.py` | Web API (FastAPI) with an endpoint that asks a local AI model |
 
 ## How to run
 
@@ -34,6 +35,14 @@ ollama pull llama3.2
 ```
 
 Then run `python3 chatbot.py`.
+   To run the web API:
+
+   ```
+   pip3 install fastapi uvicorn
+   uvicorn main:app --reload
+   ```
+
+   Then open http://127.0.0.1:8000/docs
 
 ## What I practiced
 
