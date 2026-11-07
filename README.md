@@ -15,6 +15,7 @@ This repository contains my first Python projects.
 | `todo.py` | Command-line to-do list that saves tasks in a file |
 | `ask_ai.py` | Sends a question to a local AI model (Ollama) |
 | `chatbot.py` | Chatbot that remembers the conversation |
+| `doc_qa.py` | Answers questions about a text file using a local AI model |
 
 ## How to run
 

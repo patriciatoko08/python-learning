@@ -1,0 +1,6 @@
+I am Patricia TOKO. I completed a Higher Technician Diploma in Software Engineering at IAI Cameroon in 2026. During my studies I learned databases, web development, Java and more other courses. My favorite subject was databases because i loved manipulating commands.
+For my final project, I built An E-Learning Cameroonian Culture PlateForm. The hardest part was Working on the Backend. I worked with a team.
+
+In November 2026 I started learning Python. So far I have built a calculator, a word counter, a weather program that calls a public API, a to-do list that saves its tasks in a file, and a chatbot that runs on my own computer.
+
+My goal is to work remotely in AI application development. I have young children, so I need flexible hours. I plan to build a portfolio on GitHub and later learn to use cloud AI APIs.
