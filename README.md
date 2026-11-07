@@ -22,6 +22,16 @@ You need Python 3 installed. For the weather program, install the `requests` lib
 pip3 install requests
 python3 weather.py
 ```
+For the AI programs, install [Ollama](https://ollama.com), then run these commands once:
+
+```
+pip3 install ollama
+ollama pull llama3.2
+```
+
+Then run `python3 chatbot.py`.
+
+
 
 ## What I practiced
 
@@ -35,4 +45,7 @@ python3 weather.py
 
 - Calling an AI model through its API
 - Building a small chatbot project
+   | `ask_ai.py` | Sends a question to a local AI model (Ollama) |
+   | `chatbot.py` | Chatbot that remembers the conversation |
+
   
